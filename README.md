@@ -3,5 +3,5 @@ a python script that prints out the given cities where the moon is visble to an 
 
 ## need:
 
-pip install ephem
-pip install geopy
+1. pip install ephem
+2. pip install geopy
