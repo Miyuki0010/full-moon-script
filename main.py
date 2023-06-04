@@ -1,9 +1,11 @@
 import ephem
 import datetime
+import json
 from geopy.geocoders import Nominatim
 
-# Define a list of cities
-cities = ['Berlin', 'London', 'New York', 'Sydney', 'Vienna', 'Paris']
+# Load cities from file
+with open('cities.json') as f:
+    cities = json.load(f)
 
 # Initialize a geocoder object
 geolocator = Nominatim(user_agent='full_moon_bot')
